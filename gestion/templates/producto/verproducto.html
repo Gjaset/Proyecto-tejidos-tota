@@ -1,0 +1,65 @@
+{% extends 'partials/body.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block contenido %}
+
+
+
+<div class="padding">
+    <h1 class="text-center font-4em">Datos del producto</h1>
+</div>
+<div>
+
+</div>
+<div>
+    
+</div>
+<div class="bg-ver w-25 centrar  ">
+    <div class="contenedorTabla  tablaProducto  ">
+        <table class=" table results  centrar font-2em tablaVer" >
+            <thead class="borderT">
+              <tr >
+                  <th scope="col"  >Nombre :</th>
+                  <th scope="col" >{{producto.nombre}}</th>
+              </tr>
+              <tr>
+                <th scope="col"  >Categoria :</th>
+                <th scope="col" >{{producto.categoria}}</th>
+            </tr>
+            <tr>
+                <th scope="col"  >Precio :</th>
+                <th scope="col">{{producto.precio}} </th>
+            </tr>
+            <tr>
+                <th scope="col"  >Porcentaje <br>a ganar :</th>
+                <th scope="col">{{producto.}}</th>
+            </tr>
+            <tr>
+                <th scope="col"  >Valor <br>porcentaje :</th>
+                <th scope="col">{{producto.}}</th>
+            </tr>
+            <tr>
+                <th scope="col"  >Color :</th>
+                <th scope="col">{{producto.color}}</th>
+            </tr>
+            <tr>
+                <th scope="col" >Marca :</th>
+                <th scope="col">{{producto.marca}}</th>
+            </tr>
+            <tr>
+                <th scope="col"  >Talla :</th>
+                <th scope="col">{{producto.talla}}</th>
+            </tr>
+            <tr>
+                <th scope="col"  >Estado :</th>
+                <th scope="col"></th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+   
+
+
+{% endblock contenido %}
+

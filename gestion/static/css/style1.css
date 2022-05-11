@@ -1,0 +1,651 @@
+*{
+    font-family: Unna;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Unna;
+    src:url('../fonts/Unna/Unna-Regular.ttf'), 
+    url('../fonts/Unna/Unna-Bold.ttf'), 
+    url('../fonts/Unna/Unna-BoldItalic.ttf'), 
+    url('../fonts/Unna/Unna-Italic.ttf') ;
+}
+.centrar{
+    margin: 0 auto;
+}
+
+.buttons-pdf{
+    background-color: rgb(185, 62, 62) !important;
+}
+.buttons-excel{
+    background-color: rgb(68, 116, 68) !important;
+}
+.buttons-print{
+    background-color: #f2f2f2 !important;
+}
+.borderT{
+    border-color: #b6c9f3;
+}
+.bg-ver{
+    background-color: #ddfcdf;
+}
+.font-2em{
+    font-size: 2em;
+}
+.font-4em{
+    font-size: 4em;
+}
+.padding{
+    padding: 50px 0px 70px 0px;
+}
+.tablaVer{
+    border-style: none !important;
+}
+.arreglar{
+    position: absolute;
+    inset: 0px 0px auto auto;
+    margin: 0px;
+    transform: translate(-68px 1px);
+}
+.bg-gray{
+    background-color: #98999b;
+}
+
+
+
+/*accesibilidad*/
+.f0 {
+    font-size: 0.8rem;
+  }
+  .f1 {
+    font-size: 0.9rem;
+  }
+  .f2 {
+    font-size: 1rem;
+  }
+  .f3 {
+    font-size: 1.1rem;
+  }
+  .f4 {
+    font-size: 1.2rem;
+  }
+  
+  
+  
+
+p{
+    font-size: 1.2rem;
+}
+
+.dark-mode{
+    background-color:rgba(0, 0, 0, 0.822);
+    color:#fff;
+}
+
+
+/*index*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .contenedorHeader{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cuadroH1{
+        width: 15%;      
+    }
+        .logoH1{
+            margin: 10px 0px;
+            float: right;
+            width: 82%;
+        }
+
+    .cuadroH2{
+        width: 70%;
+        text-align: center;
+        display: table;
+        
+    }
+        .textoH2{
+            display: table-cell;
+            vertical-align: middle;
+            color: #fff;
+        }
+
+    .cuadroH3{
+        width: 100px;
+        width: 15%;
+
+    }
+        .botonH3{
+            float: right;
+            margin-top: 25%;
+            margin-right: 20%;
+            padding: 10px 30px !important;
+            font-size: 2rem !important;
+        }
+body{
+    
+}
+main{
+    width: auto;
+    background-image: url("../img/png/fondo6.png");
+    background-size: cover;
+    min-height: 100vh;
+}
+    .border-5{
+        border-radius: 5px
+    }
+    .contenedorMain{
+        width: 40%;
+        margin: 0 auto;
+    }
+    .imgCarousel{
+        margin-bottom: 20px;
+        width: 100%;
+        border-radius: 15px ;
+        
+    }
+    .marqueeTxt{
+        margin-top: 10px;
+        font-size: 3em;
+        
+    }
+
+    
+    
+footer{
+        background: #4c83fa;
+ 
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .contenedor-footer{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+        border-bottom: 1px solid #ffffff;
+    }
+    
+    .content-foo{
+        text-align: center;
+    }
+    
+    .content-foo h4{
+        color: #fff;
+        border-bottom: 3px solid #ffffff;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .content-foo p{
+        color: rgb(255, 255, 255);
+    }
+    
+    .titulo-final{
+        text-align: center;
+        font-size: 24px;
+        margin: 20px 0 0 0;
+        color: #ffffff;
+    }
+.ayuda{
+    position: fixed;
+    bottom: 2px;
+    right: 5px;
+    width: 40px;
+    color: #000000; 
+}
+/*Inicio*/
+header{
+    background-color: #4c83fa;
+    
+}
+.headerI1{
+    display: flex;
+    width: 100%;
+}
+
+    .cuadroHI1-1{
+        width: 70%;
+        text-align: center;
+        font-size: 4em;
+    }
+    .cuadroHI1-2{
+        width: 15%;
+    }
+        .menu{
+            margin: 5px 5px 0px 0px;
+            color: #345995;
+            display: flex;
+            justify-content: end;
+        }
+        
+
+.headerI2{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+    .cuadroHI2-1{
+        width: 15%;
+    }
+    h1{
+        font-size: 4rem !important;
+      }
+.cuadroHI2-2{
+    width: 100%;
+    display: table;
+
+}
+    .cuadroHI2-2 nav{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+ 
+    .cuadroHI2-2 nav ul{
+        list-style: none;
+        display: inline-block;
+        padding: 5px;
+    }
+ 
+    .cuadroHI2-2 nav ul li{
+        float: left;
+        margin-top: 5px;
+    }
+ 
+    .cuadroHI2-2 nav ul li a {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 3em;
+        padding: 10px;
+    }
+ 
+    .cuadroHI2-2 nav ul li a:hover{
+        background-color: #00c3ff7c;
+    }
+.txtMainI{
+    font-size: 3em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+/*Usuario*/
+.contenedorMainU{
+    width: 100%;
+    min-height: 0vh;
+    padding: 20px;
+}
+    .navegar{
+        display: inline-block;
+        justify-content:left;
+    }
+        .navegar div{
+            float: left;
+            padding: 10px;
+        }
+    .usuarioU{
+        float: right;
+    }
+    .botoncrear{
+        display: flex;
+        float: left;
+    }
+
+    .p{
+        display: flex;
+        justify-content:left;
+    }
+.conBotonImp{
+    background-color: rgb(151, 142, 142);
+    color: rgb(255, 255, 255);
+    padding: 2px 6px;
+    margin: 0px 10px 0px 0px;
+
+}
+.conBotonExcel{
+    background-color: rgb(130, 226, 119);
+    color: rgb(255, 255, 255);
+    padding: 2px 6px;
+    margin: 0px 10px 0px 0px;
+}
+.conBotonPdf{
+    background-color: rgb(238, 145, 145);
+    color: rgb(255, 255, 255);
+    padding: 2px 6px;
+}
+.imprimirPdf{
+    width: 50px;
+}
+
+.agreproducto{
+    margin-left: 12px;
+    text-align: center;
+}
+.tallaproducto{
+margin-left: 13px;
+text-align: center;
+width: 30px;
+}    
+.marcaproducto{
+margin-left: 13px;
+text-align: center;
+}
+.iconosOpcion{
+    display: flex;
+    align-items: left;
+    font-size: 0.8em;
+   
+}
+.talla{
+width: 15px;
+}
+
+.opcionesTabla{
+    width: 35px;
+    padding: 2px;
+}
+.iconAdUsuario{
+    width: 40px;
+}
+
+.historial{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+/*ICONOS*/
+.acces {
+    position: fixed;
+    right: 0px;
+    top: 50%;
+}
+    .acces h2{
+        font-size: 1.5em;
+        text-align: center;
+    }
+        
+
+/*ver producto*/
+.datosver{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 4em;
+    }
+    .verproduc{
+        width: 35%;
+        margin: 0 auto;
+        border: 2px solid black;
+        font-size: 2em;
+        margin-bottom: 100px;
+    
+    }
+.btn-green{
+    background-color: aquamarine;
+    border-color: azure;
+}
+.tituloFormulario{
+    font-size: 3em !important;
+
+}
+.fondoFormulario{
+    width: 300px;
+    background-color: #f1f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 40px 20px  rgb(190, 190, 192);
+}
+
+@media screen and (max-width:1300px){
+/*Index*/
+main{
+    min-height: 60vh !important;
+}
+    .accesibilidad{
+        width: 30px;
+    }
+    .ayuda{
+        width: 30px;
+        font-size: 0.7em;
+    }
+    h1{
+        font-size: 2.5rem !important;
+      }
+    
+    .marqueeTxt{
+        font-size: 4em;        
+    }
+
+    
+/*Inicio*/
+    .cuadroHI2-2 nav ul li a {
+        font-size: 2.5em;
+        padding: 5px;
+        border:  1px solid;
+    }
+    .txtMainI{
+        font-size: 3em;
+    }
+    .contenedorMainU{
+        padding: 0px;
+    }
+        .cuadroHI2-2 nav ul li a {
+            font-size: 2em;
+            padding: 10px 5px;
+        }
+        .txtMainI{
+            font-size: 2em;
+            text-align: center;
+        }
+/*Usuario*/
+.opcionesTabla{
+    width: 25px;
+    padding: 2px;
+}
+
+    .conBotonImp{
+        background-color: rgb(151, 142, 142);
+        color: rgb(255, 255, 255);
+        padding: 2px 4px;
+        margin: 0px 5px 0px 0px;
+
+    }
+    .conBotonExcel{
+        background-color: rgb(130, 226, 119);
+        color: rgb(255, 255, 255);
+        padding: 2px 4px;
+        margin: 0px 5px 0px 0px;
+    }
+    .conBotonPdf{
+        background-color: rgb(238, 145, 145);
+        color: rgb(255, 255, 255);
+        padding: 2px 4px;
+    }
+    .imprimirPdf{
+        width: 40px;
+    }
+/*Producto*/
+.tablaProducto{
+    overflow-y: scroll;
+}
+}
+
+
+@media screen and (max-width:700px){
+/*Index*/
+main{
+    min-height: 30vh !important;
+}
+    h1{
+        font-size: 1.5rem;
+        }
+        .botonH3{
+            float: right;
+            margin-top: 30% !important;
+            margin-right: 30% !important;
+            padding: 0px 0px !important;
+            font-size: 0.8rem !important;
+        }
+    .marqueeTxt{
+        font-size: 0.8em;
+    }
+        .contenedor-footer{
+            flex-direction: column;
+            border: none;
+        }
+    
+        .content-foo{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    
+        .content-foo h4{
+            border: none;
+        }
+    
+        .content-foo p{
+            color: #ccc;
+            border-bottom: 1px solid #f2f2f2;
+            padding-bottom: 20px;
+        } 
+        .titulo-final{
+            font-size: 20px;
+        }
+/*Inicio*/
+
+.contenedorMainU{
+    padding: 0px;
+} 
+    .cuadroHI2-2 nav ul li a {
+        font-size: 1em;
+        padding: 10px 5px;
+    }
+    .txtMainI{
+        font-size: 2em;
+        text-align: center;
+    }
+/*usuario*/
+
+.navTablaUsuario{
+    width: 20px;
+}
+.opcionesTabla{
+    width: 15px;
+    padding: 0px;
+}
+/*Ver producto*/
+.verproduc{
+    width: 75%;
+    margin: 0 auto;
+    border: 2px solid black;
+    font-size: 1.4em;
+    margin-bottom: 100px;
+
+}
+
+.conBotonImp{
+        background-color: rgb(151, 142, 142);
+        color: rgb(255, 255, 255);
+        padding: 1px 2px;
+        margin: 0px 2px 0px 0px;
+
+    }
+    .conBotonExcel{
+        background-color: rgb(130, 226, 119);
+        color: rgb(255, 255, 255);
+        padding: 1px 2px;
+        margin: 0px 5px 0px 0px;
+    }
+    .conBotonPdf{
+        background-color: rgb(238, 145, 145);
+        color: rgb(255, 255, 255);
+        padding: 1px 2px;
+    }
+    .imprimirPdf{
+        width: 20px;
+    }
+.iconAdUsuario{
+    width: 20px;
+}
+}
+
+@media screen and (max-width:583px){
+
+    main{
+        min-height: 4vh !important;
+    }
+.contenedorTabla{
+    font-size: 0.5em;
+}
+
+.navTablaUsuario{
+    width: 10px;
+}
+.opcionesTabla{
+    width: 10px;
+    padding: 0px;
+}
+/*Crear Usuario*/
+.formularioProducto {
+    font-size: 0.8em;
+}
+.botonH3{
+    float: right;
+    margin-top: 25%;
+    margin-right: 5%;
+    font-size: 0.8rem !important;
+}
+.tituloFormulario{
+    font-size: 3em !important;
+
+}
+.fondoFormulario{
+
+    background-color: #f1f1f1f1;
+}
+
+
+}
+
+@media screen and (max-width:375px){
+/*Inicio*/
+    .cuadroHI2-2 nav ul li a { 
+        padding: 10px 5px;
+    }
+    h1{
+        font-size: 0.8rem;
+    }
+    .contenedorTabla{
+        font-size: 0.4em;
+} 
+/*Usuario*/
+
+/*Crear Usuario*/
+.formularioProducto {
+    font-size: 0.6em;
+}
+/*ver producto*/
+.verproduc{
+            width: 75%;
+            margin: 0 auto;
+            border: 2px solid black;
+            font-size: 1em;
+            margin-bottom: 100px; 
+        }
+.fondoFormulario{
+    font-size: 0.8em;
+    background-color: #f1f1f1f1;
+}
+}
+
+
+.btn-greennn{
+    background: greenyellow;
+}

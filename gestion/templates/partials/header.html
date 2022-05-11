@@ -1,0 +1,43 @@
+
+
+
+{% load static %}
+
+<header>
+  <div class="headerInicio">
+    <div class="contenedorHeader">
+      <div class="cuadroH1">
+        <img class="logoH1" src="{% static 'img/png/LOGO 16.png' %} " alt="" />
+      </div>
+      <div class="cuadroH2">
+        <h1 class="textoH2">Unidad Productiva <br />Tejidos y Variedades Tota</h1>
+      </div>
+      <div class="cuadroHI1-2">
+        <div  class="menu">
+            <div class="dropdown">
+              <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"><img src= "{% static './img/png/list.svg' %}" style="width: 15px;"alt="" srcset="">
+                
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="{% url 'index' %}">Cerrar sesion</a>
+                <a class="dropdown-item" href="#">Crear copia de seguridad</a>
+                <a class="dropdown-item" href="#">Cargar copia de seguridad</a>
+              </div>
+            </div>  
+          </div>
+      </div>
+    </div>
+    <div class="headerI2">
+      <div class="cuadroHI2-2">
+        <nav>
+          <ul>
+            <li><a href="{% url 'inicio' %}">Inicio</a></li>    
+            <li><a href="{% url 'usuario-tablaUsuario' %}">Usuario</a></li>  
+            <li><a href="{% url 'producto-producto' %}">Productos</a></li>
+            <li><a href="{% url 'factura-tfactura' %}">Facturas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

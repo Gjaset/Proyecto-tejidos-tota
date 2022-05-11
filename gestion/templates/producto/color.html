@@ -1,0 +1,66 @@
+{% extends 'partials/body.html' %}
+{% load crispy_forms_tags %}
+
+{% block contenido %}
+
+
+<main class="contenedorMainU d-inline-flex">
+  <div class="contenedorMainU">
+    <div class="">
+      <div class="col-md-8">
+        {% if messages %} {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+        {% endfor %} {% endif %}
+        <div class="formularioProducto container p-3">
+          <div class="my-5 fondoFormulario">
+            <h4>Agregar Color</h4>
+            <hr />
+            <form action="" method="POST">
+              {% csrf_token %}
+              {{ form|crispy }}
+              <input
+                class="btn btn-success btn-block"
+                type="submit"
+                value=" Guardar"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <div class="col-md-3">
+      <div class="contenedorMainU">
+        <input
+          type="text"
+          class="search form-control"
+          placeholder="Que estas buscando?"
+        />
+        <span class="counter pull-right col-md-4 ubiq"></span>
+      </div>
+    </div>
+
+    <form id="form1">
+      <div class="contenedorTabla col-md-8">
+        <table class="table table-striped">
+          <thead class="bg-blue">
+            <tr class="bg-light">
+              <th scope="col">Nombre</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for color in colores %}
+            <tr>
+              <td>{{color.nombre}}</td>
+            </tr>
+            {% endfor%}
+          </tbody>
+        </table>
+      </div>
+    </form>
+  </div>
+</main>
+
+{% endblock contenido %}

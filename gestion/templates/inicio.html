@@ -1,0 +1,26 @@
+{% extends 'partials/body.html' %}
+{% load static %}
+{% block contenido %}
+<main class="main">
+    <div>
+        <div class="contenedorMain">
+            <p class="txtMainI">Bienvenido al sistema</p>
+            <section class="carousel-contenedor">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="imgCarousel" src="{% static './img/botso3.jpg' %}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                      <img class="imgCarousel" src="{% static  './img/cabezas.jpg' %}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                      <img class="imgCarousel" src="{% static './img/cabezas.jpg' %}" class="d-block w-100" alt="...">
+                    </div>
+                  </div>                           
+                </div>        
+            </section>
+        </div>
+    </div>
+  </main>
+  {% endblock %}
